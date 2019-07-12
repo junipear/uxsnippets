@@ -1,0 +1,173 @@
+<html>
+    <head>
+<style>
+    .col-14-percent {
+        float: left;
+        width: 14%;
+        margin-top: 6px;
+        padding:0px 0px 10px 0px;
+        background-color: #fff;
+        text-align: center;
+    }
+
+    .panelRow {
+        margin:auto;
+        display: block;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+    }
+
+    /*clear floats after colums*/
+    .panelRow:after {
+        content: "";
+        display: table;
+        clear: both;
+    }
+    /*stack cells when screen size less that 600px*/
+    @media screen and (max-width: 600px) {
+        .col-14-percent {
+            width: 100%;
+            margin-top: 20px;
+            padding: 5px;
+        }
+    }
+        /*stack cells 2x when screen is 601-900px*/
+        @media screen and (min-width: 601px) and (max-width: 900px) {
+        .col-14-percent {
+            width: 30%;
+            margin-top: 20px;
+            padding: 5px;
+        }
+    }
+
+.accordion {
+  background-color: #ffc423;
+  color: #fff;
+  cursor: pointer;
+  width: 100%; 
+  font-size: 2em;
+  transition: 0.4s;
+  text-align: left;
+}
+
+
+
+.activeA, .accordion:hover {
+  background-color: #c41034;
+  color:#fff;
+  overflow: visible;
+}
+
+.accordion:after {
+  content: '\002B';
+  color: #fff;
+  font-weight: bold;
+  float: right;
+  margin-left: 5px;
+  overflow: visible;
+}
+
+.activeA:after {
+  content: "\2212";
+}
+
+.dropDownPanel {
+  padding: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+  
+}
+
+.zoom:hover {
+    -ms-transform: scale(2.2); /* IE 9 */
+    -webkit-transform: scale(2.2); /* Safari 3-8 */
+    transform: scale(2.2); 
+    transition: transform 1s ease-out;
+    position:relative;
+    transform-origin: 10% 30%;
+    overflow: visible;
+    }
+
+    .zoomR:hover {
+    -ms-transform: scale(2.2); /* IE 9 */
+    -webkit-transform: scale(2.2); /* Safari 3-8 */
+    transform: scale(2.2); 
+    transition: transform 1s ease-out;
+    position:relative;
+    transform-origin: 60% 30%;
+    overflow: visible;
+    }
+
+</style>
+</head>
+<body>
+
+<button class="accordion">August 5-11</button>
+<div class="panelRow">
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener" ><img src="/media/wysiwyg/1.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/2.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/3.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/4.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/5.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/6.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/7.png" class="zoomR" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+</div>
+<button class="accordion">August 12-18</button>
+<div class="panelRow dropDownPanel">
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener" ><img src="/media/wysiwyg/1.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/2.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/3.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/4.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/5.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/6.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/7.png" class="zoomR" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+</div>
+<button class="accordion">Aug 19-25</button>
+<div class="panelRow dropDownPanel">
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener" ><img src="/media/wysiwyg/1.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/2.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/3.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/4.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/5.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/6.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/7.png" class="zoomR" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+</div>
+<button class="accordion">August 26-September 1</button>
+<div class="panelRow dropDownPanel">
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener" ><img src="/media/wysiwyg/1.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/2.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/3.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/4.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/5.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/6.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/7.png" class="zoomR" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+</div>
+<button class="accordion">September 2 & 3</button>
+<div class="panelRow dropDownPanel">
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/2.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+    <div class="col-14-percent"><a href="link.html" target="_blank" rel="noopener"><img src="/media/wysiwyg/3.png" class="zoom" style="height:120px; width: 140px; padding:20px;"/><button>Show Me</button></a></div>
+
+</div>
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("activeA");
+    var dropDownPanel = this.nextElementSibling;
+    if (dropDownPanel.style.maxHeight){
+      dropDownPanel.style.maxHeight = null;
+    } else {
+      dropDownPanel.style.maxHeight = dropDownPanel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
+</div>
+</div>
+
+</body>
+</html>
